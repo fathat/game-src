@@ -1,0 +1,50 @@
+//-----------------------------------------------------------------------------
+// pascal.shil
+//
+// Example SHilScript file used to test features such as prototyping and
+// recursion by recreating a (skewed) Pascal's triangle.
+//
+// (C) 2002 Scott Hilbert
+//-----------------------------------------------------------------------------
+
+// Prototype the functions we're gonna use. We don't need to
+// prototype Foo(), but we do anyway just for cleanliness :)
+prototype Foo(row,col);
+prototype GetNum(row,col);
+
+// Returns the number at a row and column by finding the number
+// above and left of it
+function Foo(row, col)
+{
+	return GetNum(row-1, col-1) + GetNum(row-1, col);
+}
+
+// Returns the number at a row and column, taking bounds and
+// the 1 seed into account
+function GetNum(row, col)
+{
+	if(col < 0 || col > row || row < 0)
+		return 0;
+	else if(col==0 && row==0)
+		return 1;
+	else
+		return Foo(row,col);
+}
+
+// Print a little title
+print("Pascal's triangle\n\n");
+
+// For 9 rows...
+for(var row=0; row < 9; row++)
+{
+	// Start with a clean line
+	var line = "";
+	
+	// For each column (each row has row+1 columns)
+	for(var col=0; col<=row; col++)
+		// Append the number at this row,col position and a space to the line variable
+		line .= GetNum(row,col) . " ";
+		
+	// Print the line we just assembled
+	print(line."\n");
+}

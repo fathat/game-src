@@ -1,0 +1,71 @@
+;
+; v0,v3 position for keyframe 0, 1
+; v1,v4 normal for keyframe 0, 1
+; v2,v5 tex coord for keyframe 0, 1
+;
+; world-view projection matrix 0-3
+; light direction 	       4
+; world matrix                 5-8
+; blend factors                9
+; constants                    10
+
+vs.1.1
+
+dcl_position0  v0 
+dcl_normal0    v1   
+dcl_texcoord0  v2
+
+dcl_position1  v3 
+dcl_normal1    v4   
+dcl_texcoord1  v5
+
+
+;lerp in model space
+mul r1, v0, c[9].y
+mad r1, v3, c[9].x, r1
+
+; and the same for the normals
+mul r2, v1, c[9].y
+mad r2, v4, c[9].x, r2
+
+; Transform to clip space
+;dp4 oPos.x, r1, c[0]
+;dp4 oPos.y, r1, c[1]
+;dp4 oPos.z, r1, c[2]
+;dp4 oPos.w, r1, c[3]
+mul r0, r1.x, c[0] 
+mad r0, r1.y, c[1], r0 
+mad r0, r1.z, c[2], r0 
+add oPos, c[3], r0 
+
+;dp3 r0.x, r2, c[5]
+;dp3 r0.y, r2, c[6]
+;dp3 r0.z, r2, c[7]
+
+; transform normal
+dp3 r0.x, r2, c[5]
+dp3 r0.y, r2, c[6]
+dp3 r0.z, r2, c[7]
+
+; renormalize it
+dp3 r0.w, r0, r0
+rsq r0.w, r0.w
+mul r0, r0, r0.w
+
+
+
+
+; Dot normal with light direction in world space
+dp3 r1, r0, -c[4]
+
+mul r1, r1, c[10] ; modulate against light color
+mul oD0, r1, c[11] ; modulate against material
+mov oD0.w, c[10].w ; set alpha to white O___O
+
+;mov oD0, c[11]
+
+;dp3  r0     , r0   , -c[4]     ; perform lighting N dot L calculation in world space        
+;mul  oD0    , r0.x ,  c[11]    ; calculate final pixel color from light intensity and
+                                ; interpolated diffuse vertex color 
+; Pass through texture coords
+mov oT0.xy, v2

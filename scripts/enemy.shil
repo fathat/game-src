@@ -1,0 +1,35 @@
+//-----------------------------------------------------------------------------
+// enemy.shil
+//
+// Basic enemy controller class 
+//
+// (C) 2002 Ian Overgard
+//-----------------------------------------------------------------------------
+
+
+
+//system identifier function -- called by the system
+function ShowAppInfo()
+{
+	print("Basic Enemy Controller Script\n");
+	return 0;
+}
+
+
+
+//Main function!!1
+function SetCharacterHandle(characterhandle)
+{
+}
+
+//main something something
+var appdone=0;
+while(!appdone)
+{
+	//check for kill
+	if(CheckForKill() == 1)
+	{
+		appdone = 1;
+	}
+}
+

@@ -1,0 +1,151 @@
+//-----------------------------------------------------------------------------
+// intro.shil
+//
+// Handles the intro stuff
+//
+// (C) 2002 Ian Overgard
+//-----------------------------------------------------------------------------
+
+
+//globals
+var StartTime;
+var EndTime;
+var Alpha;
+var exitnow=0;
+
+prototype Skip ();
+prototype Main ();
+
+main();
+//system identifier function -- called by the system
+function ShowAppInfo()
+{
+	print("Basic Intro Controller Script\n");
+	return 0;
+}
+
+//function for fading in an image
+function FadeIn(image, time)
+{
+
+	//Fade in the image
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		//check if we need to skip the movie
+		if(SkipMovie())
+		{
+			exitnow=1;
+			return 0;
+		}
+
+		Alpha = (GetTime()-StartTime)/(time);
+		ClearScreen();
+		DrawImageCentered( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function ShowImage(image, time)
+{
+	//Show the image
+	StartTime = GetTime(); //returns time in milliseconds
+	while(StartTime > (GetTime() - time))
+	{
+		//check if we need to skip the movie
+		if(SkipMovie())
+		{
+			exitnow=1;
+			return 0;
+		}
+	
+		ClearScreen();
+		DrawImageCentered( image, 0, 255 );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function FadeOut(image, time)
+{
+	//Fade out the image
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		//check if we need to skip the movie
+		if(SkipMovie())
+		{
+			exitnow=1;
+			return 0;
+		}
+
+		Alpha = 1-((GetTime()-StartTime)/(time));
+		ClearScreen();
+		DrawImageCentered( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+
+//function for fading in an image
+function FadeInFS(image, time)
+{
+	
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = (GetTime()-StartTime)/(time);
+		ClearScreen();
+		DrawImageFullscreen( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function ShowImageFS(image, time)
+{
+
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	while(StartTime > (GetTime() - time))
+	{
+		ClearScreen();
+		DrawImageFullscreen( image, 0, 255 );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function FadeOutFS(image, time)
+{
+	
+	
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = 1-((GetTime()-StartTime)/(time));
+		ClearScreen();
+		DrawImageFullscreen( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+
+function main()
+{
+	//main something something
+	print("Intro Controller Script Active\n");
+    print("Type: loadmapxml base testmap\n");
+	
+}
+
+function Skip ()
+{
+}

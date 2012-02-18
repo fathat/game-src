@@ -1,0 +1,44 @@
+; Depth Fade
+;
+; v0 position for vertex 0
+; v1 diffuse color
+; v2 tex0 coord for vertex 
+;
+; world-view projection matrix 0-3
+; constants for depth fade     4
+
+vs.1.1
+
+dcl_position0 v0
+dcl_color0    v1
+dcl_texcoord0 v2
+
+; Transform to clip space
+mov r1, v0
+mul r0, r1.x, c[0] 
+mad r0, r1.y, c[1], r0 
+mad r0, r1.z, c[2], r0 
+add r3, c[3], r0 
+mov oPos, r3
+
+;figure out fog value
+sub r1.x, r3.z, c[8].x
+mul r1.x, r1.x, c[8].z
+sub oFog, c[8].w, r1.x
+
+; set alpha based on the z distance
+; to do this first we subtract the near clipping plane from
+; the z value
+mov r1, v1
+mul r1, r1, c[10] ; multiply by the sun color
+sub r3.z, r3.z, c[9].x
+
+; then scale it
+mul r1.w, r3.z, c[9].y
+
+;hopefully r1 is between 1 and 0, so invert it
+sub r1.w, c[9].z, r1.w
+mov oD0, r1
+
+;Pass through the texture coords
+mov oT0.xy, v2

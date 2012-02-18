@@ -1,0 +1,34 @@
+//-----------------------------------------------------------------------------
+// intro.shil
+//
+// Handles teh intro stuff!! O_O!
+//
+// (C) 2002 Ian Overgard
+//-----------------------------------------------------------------------------
+
+
+
+prototype Main ();
+
+main();
+
+
+function main()
+{
+
+	//OH NO! FLASH OF WHITE LIGHT!
+	DrawWorld(0);
+	MovieMode(1);
+	ClearScreen();
+	UpdateScreen();
+	SetWeather("..\\maps\\canyon\\weather_snowy2.ini");
+	SetGrassTexture("..\\maps\\canyon\\snow.bmp");
+	ReplaceTexture("..\\maps\\canyon\\grass.bmp", "..\\maps\\canyon\\snow.bmp", 0);
+	ReplaceTexture("..\\maps\\canyon\\cliff_original.bmp", "..\\maps\\canyon\\cliff-snow.bmp", 0);
+	ReplaceTexture("..\\art\\objects\\decoration\\leaftri.bmp", "..\\art\\objects\\decoration\\leaftri_snow.bmp", "..\\art\\objects\\decoration\\leaftri_a.bmp" );
+	ReplaceTexture("..\\art\\objects\\decoration\\bark.bmp", "..\\art\\objects\\decoration\\bark_snow.bmp",0 );
+	Sleep(4000);
+	DrawWorld(1);
+	MovieMode(0);
+
+}

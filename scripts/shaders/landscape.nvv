@@ -1,0 +1,47 @@
+;
+; v0: position A
+; v1-v3: texture coordinates
+; v4: position B
+; v5-v7: texture coordinates
+;
+; world-view projection matrix 0-3
+; fog			       8	x = fog start, y = fog end, z = 1/range
+; blend factors                9 ( x is interpolation factor, y is inverse interpolation factor
+; constants                    10
+
+vs.1.1
+dcl_position0 v0  
+dcl_position1 v4  
+dcl_texcoord0 v1
+dcl_texcoord1 v2
+dcl_texcoord2 v3
+dcl_texcoord3 v5
+dcl_texcoord4 v6
+dcl_texcoord5 v7
+
+
+;lerp in model space
+mul r1, v0, c[9].y
+mad r1, v4, c[9].x, r1
+;mov r1, v0
+
+; Transform to clip space
+mul r0, r1.x, c[0] 
+mad r0, r1.y, c[1], r0 
+mad r0, r1.z, c[2], r0 
+add r0, c[3], r0 
+mov oPos, r0
+
+;figure out fog value
+sub r1.x, r0.z, c[8].x
+mul r1.x, r1.x, c[8].z
+sub oFog, c[8].w, r1.x
+;mov oFog, r1.x
+
+;light
+mov oD0, c[10]
+
+; Interpolate the texture coords 
+mov oT0.xy, v1
+mov oT1.xy, v2
+mov oT2.xy, v3

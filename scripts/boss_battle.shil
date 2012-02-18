@@ -1,0 +1,218 @@
+//-----------------------------------------------------------------------------
+// boss_battle.shil
+//
+// Handles the boss battle!
+//
+// (C) 2002 Ian Overgard
+//-----------------------------------------------------------------------------
+
+//globals
+var StartTime;
+var EndTime;
+var Alpha;
+
+
+//function for fading in an image
+function FadeIn(image, time)
+{
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = (GetTime()-StartTime)/(time);
+		ClearScreen();
+		DrawImageCentered( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function ShowImage(image, time)
+{
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	while(StartTime > (GetTime() - time))
+	{
+		ClearScreen();
+		DrawImageCentered( image, 0, 255 );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function FadeOut(image, time)
+{
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = 1-((GetTime()-StartTime)/(time));
+		ClearScreen();
+		DrawImageCentered( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function FadeInFS(image, time)
+{
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = (GetTime()-StartTime)/(time);
+		ClearScreen();
+		DrawImageFullscreen( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function ShowImageFS(image, time)
+{
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	while(StartTime > (GetTime() - time))
+	{
+		ClearScreen();
+		DrawImageFullscreen( image, 0, 255 );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function FadeOutFS(image, time)
+{
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = 1-((GetTime()-StartTime)/(time));
+		ClearScreen();
+		DrawImageFullscreen( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+
+
+//main something something
+print("Boss Controller Script Active\n");
+
+var State = 0;
+var Done = 0;
+
+while (!Done)
+{
+
+	//Show the cyclone
+	if(GetPlayerDistance("wnd") < 500 && State == 0)
+	{
+		ActivateEntityFunction("wnd", 0);
+		State = 1;
+	}
+	
+
+	//Start the boss sequence
+	if(GetPlayerDistance("wnd") < 180 && State == 1)
+	{
+		State = 2;
+		SaveCamera();
+		//Movie mode
+		DrawWorld(1);
+		MovieMode(1);
+		
+		//Show the boss guy taunting you
+		SetWeather("..\\maps\\canyon\\weather_stormy.ini");
+		PlayMusic("..\\music\\boss.mp3");
+		SetCameraTarget( "bs" );
+		SetEntityRotation( "bs", 0, 0, 0 );
+		SetCameraRotation(0,0,0);
+		RotationDrift(0,0,0);
+		OffsetDrift(0, 0, 2);
+		SetCameraOffset(0,9,-15);
+		SetCameraZoom(0);
+		SetMovieText( "Tegnar: Heheheheh.." );
+		Sleep(4000);
+		
+		DrawWorld(0);
+		FadeInFS( "..\\art\\ui\\white.bmp", 400);
+		ShowImageFS	( "..\\art\\ui\\white.bmp", 2000);	
+		FadeOutFS( "..\\art\\ui\\white.bmp", 400);
+		DrawWorld(1);
+
+		//Movie mode
+		DrawWorld(1);
+		MovieMode(1);
+			
+		//More boss taunting!
+		SetCameraTarget( "bs" );
+		SetEntityRotation( "bs", 180, 0, 0 );
+		SetCameraRotation(0,0,0);
+		RotationDrift(0,0,0);
+		OffsetDrift(0, 0, 2);
+		SetCameraOffset(0,9,-15);
+		SetCameraZoom(0);
+		SetMovieText( "Wizard LOL: YUO STILL DONT GET IT LOL!!" );
+		Sleep(3000);
+		
+		//
+		SetCameraTarget( "bs" );
+		SetEntityRotation( "bs", 180, 0, 0 );
+		SetCameraRotation(0,10,0);
+		ChangeEntityState( "bs", "levitate" );
+		RotationDrift(0,0,0);
+		OffsetDrift(0, 2, -1);
+		SetCameraOffset(0,9,-15);
+		SetCameraZoom(0);
+		SetMovieText( "Wizard LOL!!1: I CANT FIND MY HAT" );
+		Sleep(6000);
+		
+		SetEntityHealth("bs", 6000);
+		
+		//Lightning flash
+		DrawWorld(0);
+		FadeInFS( "..\\art\\ui\\white.bmp", 400);
+		ShowImageFS	( "..\\art\\ui\\white.bmp", 2000);	
+		FadeOutFS( "..\\art\\ui\\white.bmp", 400);
+		DrawWorld(1);
+		RestoreCamera();
+		
+		MovieMode(0);
+		State = 3;
+		EnableEntityAI( "bs", 1 );
+		
+		
+	}
+	
+	if(State == 3 && GetEntityHealth("bs") <= 0)
+	{
+		SaveCamera();
+		State = 4;
+		
+		DrawWorld(1);
+		MovieMode(1);
+		
+		SetCameraTarget("bs");
+		SetCameraOffset(0, 15, 0);
+		OffsetDrift(0,1,0);
+		RotationDrift(0,0,0);
+		SetCameraRotation(0, 90, 0);
+		Sleep(6000);
+		
+		DrawWorld(0);
+		SetWeather("..\\maps\\canyon\\weather_sunny.ini");
+		FadeIn("..\\art\\ui\\quote2.bmp", 2000);
+		ShowImage("..\\art\\ui\\quote2.bmp", 4000);
+		FadeOut("..\\art\\ui\\quote2.bmp", 2000);
+		
+		MovieMode(0);
+		DrawWorld(1);
+		
+		RestoreCamera();
+	}
+}

@@ -1,0 +1,51 @@
+SHilScript Library License 1.0
+Copyright (C) 2002 Scott Hilbert
+
+DISCLAIMER:
+1. This software is provided as-is, without any express warranty, and without
+   the implied warranties of:
+
+        A. Merchantability
+        B. Fitness for a particular purpose, even scripting
+        C. Backwards compatibility
+        D. Correctness of code and documentation
+        E. Stability
+        F. Compatibility of any kind
+
+2. Labeling of a particular version of the software as "stable" or "backwards
+   compatible" does not override this license. There is no warranty on
+   stability or compatibility.
+
+3. In no event will the authors be held liable for any damages arising from the
+   use of this software.
+
+4. Use of this software in aircraft, any mass transit system, nuclear power
+   facilities, and any other situations in which human or animal life or
+   well-being is endangered is not recommended.
+
+TERMS AND CONDITIONS:
+Permission is granted to anyone to use this software for any purpose, including
+commercial applications, and to alter it and redistribute it freely via any
+medium, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented;  you must not
+   claim that you wrote the original software.  If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such,  and must not
+   be misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source distribution.
+
+By using this software you implicitly agree to the terms and conditions of this license.
+
+CONTACT:
+Scott Hilbert
+shilbert@gdnmail.net, shilrobot@hotmail.com
+http://shilbert.cjb.net/shilscript/
+
+FOOTNOTE:
+This license is comprised of a combination of ideas from the GNU GPL
+(http://www.gnu.org/copyleft/gpl.html) and the zlib compression library
+license (http://www.gzip.org/zlib/zlib_license.html).

@@ -1,0 +1,40 @@
+
+
+function WaitForKey()
+{
+	DrawWorld(0);
+	while( 1 )
+	{
+		ClearScreen();
+		DrawImageCentered( "..\\art\\ui\\endingGood.dds", 0, 255 );
+		UpdateScreen();
+
+		if( SkipMovie() )
+			return 0;
+	}
+}
+
+
+
+
+var time;
+var StartTime;
+var EndTime;
+var alpha;
+time = 2000;
+StartTime = GetTime(); //returns time in milliseconds
+EndTime   = StartTime+time;
+while(StartTime > (GetTime() - time))
+{
+	Alpha = ((GetTime()-StartTime)/(time));
+	SetScreenDarkness( (Alpha*255) );
+}
+
+
+SetScreenDarkness( 255 );
+UnloadMap();
+
+DrawWorld(0);
+MovieMode(1 );
+WaitForKey();
+QuitGame();

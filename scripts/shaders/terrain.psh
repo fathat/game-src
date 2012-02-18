@@ -1,0 +1,12 @@
+ps.1.1
+def c1, 0.0f, 0.0f, 0.0f, 1.0f
+tex t0
+tex t1
+tex t2
+tex t3
+mov r1.a, t2.a
+lrp r0, r1.a, t0, t1
+mul r0, r0, t3
+mul r0, r0, c1
+;mul r1, r0, c1
+;add r0, r0, r1

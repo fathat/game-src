@@ -1,0 +1,107 @@
+//-----------------------------------------------------------------------------
+// skeleton.shil
+//
+// Example SHilScript application that does the basic minimum of stuff.
+//
+// (C) 2002 Ian Overgard
+//-----------------------------------------------------------------------------
+
+// Imports: (functions imported from C)
+// - CheckConsoleStatus(): returns string if there's a console 
+//	 input message, 0 if there's none.
+// - CheckForKill(): checks to see if the OS wants the app to shutdown
+
+
+
+// Globals
+var Done = 0; // App finished running?
+
+// Get the console line. Note: Entire app will wait until
+// this event concludes.
+prototype GetConsoleLine( );
+
+
+//works like cin and similiar functions -- stops
+//the app until the input is received.
+function GetConsoleLine ( )
+{
+	//declarations
+	var consoleline;
+	var message;
+
+	
+	//keep checking the console status
+	//until we get our line.
+	while( 1)
+	{
+		//check for kill
+		if(CheckForKill() == 1)
+		{
+			Done = 1;
+			return "OS Kill Received";
+		}
+		
+		//check for telnet messages
+		//message = TelnetRecv( 0, 1 );
+		//if(message != "")
+		//{
+		//}
+		
+		//check the console status
+		consoleline=CheckConsoleStatus();
+		
+		//HOORAY! We finally got our line!
+		if(consoleline != "")
+		{
+			return consoleline;
+		}
+	}
+}
+
+
+
+// Print a title
+print("Skeleton Lenix application!");
+
+
+
+//if( TelnetConnect( "tiberia.homeip.net", 23, 1 ) )
+//{
+//	print( "Telnet is connect!" );
+//}
+//else
+//{
+//	print( "Telnet is suck and die" );
+//}
+
+
+//Start running the message loop
+var Message=0;
+while( Done == 0 )
+{
+	ShowPrompt( 1);
+	Message = GetConsoleLine();
+	
+	if( Message == "die" )
+	{
+		Done = 1;
+	}
+	
+	else if( Message == "help" )
+	{
+		for(var i=0; i<20; i++)
+		{
+			print("No, you suck at the inter-net");
+		}
+	}
+	
+	else
+	{
+		TelnetSend( Message, 0 );
+		TelnetSend( "\r\n", 0 );
+	}
+	
+	ShowPrompt(0);
+}
+
+print("App is suck and die");

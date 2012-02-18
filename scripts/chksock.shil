@@ -1,0 +1,22 @@
+//-----------------------------------------------------------------------------
+// chksock.shil
+//
+// Checks the state of all system sockets! 
+//
+// (C) 2002 Ian Overgard
+//-----------------------------------------------------------------------------
+
+var i;
+var outstring;
+for(i=0; i<10; i++) {
+	if(TelnetSocketLive(i))
+	{
+		outstring = "`777`Socket ".i."...   `700`[IN USE]";
+		print( outstring );
+	}
+	else
+	{
+		outstring = "`777`Socket ".i."...   `070`[ FREE ]";
+		print( outstring );
+	}
+}

@@ -1,0 +1,385 @@
+//-----------------------------------------------------------------------------
+// intro.shil
+//
+// Handles teh intro stuff!! O_O!
+//
+// (C) 2002 Ian Overgard
+//-----------------------------------------------------------------------------
+
+
+//globals
+var StartTime;
+var EndTime;
+var Alpha;
+var exitnow=0;
+
+prototype Skip ();
+prototype Main ();
+
+main();
+//system identifier function -- called by the system
+function ShowAppInfo()
+{
+	print("Basic Intro Controller Script\n");
+	return 0;
+}
+
+//function for fading in an image
+function FadeIn(image, time)
+{
+
+	//Fade in the image
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		//check if we need to skip the movie
+		if(SkipMovie())
+		{
+			exitnow=1;
+			return 0;
+		}
+
+		Alpha = (GetTime()-StartTime)/(time);
+		ClearScreen();
+		DrawImageCentered( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function ShowImage(image, time)
+{
+	//Show the image
+	StartTime = GetTime(); //returns time in milliseconds
+	while(StartTime > (GetTime() - time))
+	{
+		//check if we need to skip the movie
+		if(SkipMovie())
+		{
+			exitnow=1;
+			return 0;
+		}
+	
+		ClearScreen();
+		DrawImageCentered( image, 0, 255 );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function FadeOut(image, time)
+{
+	//Fade out the image
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		//check if we need to skip the movie
+		if(SkipMovie())
+		{
+			exitnow=1;
+			return 0;
+		}
+
+		Alpha = 1-((GetTime()-StartTime)/(time));
+		ClearScreen();
+		DrawImageCentered( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+
+//function for fading in an image
+function FadeInFS(image, time)
+{
+	
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = (GetTime()-StartTime)/(time);
+		ClearScreen();
+		DrawImageFullscreen( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function ShowImageFS(image, time)
+{
+
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	while(StartTime > (GetTime() - time))
+	{
+		ClearScreen();
+		DrawImageFullscreen( image, 0, 255 );
+		UpdateScreen();
+	}
+}
+
+//function for fading in an image
+function FadeOutFS(image, time)
+{
+	
+	
+	//Fade in the hat monstar
+	StartTime = GetTime(); //returns time in milliseconds
+	EndTime   = StartTime+time;
+	while(StartTime > (GetTime() - time))
+	{
+		Alpha = 1-((GetTime()-StartTime)/(time));
+		ClearScreen();
+		DrawImageFullscreen( image, 0, (Alpha*255) );
+		UpdateScreen();
+	}
+}
+
+
+function main()
+{
+	//main something something
+	print("Intro Controller Script Active\n");
+
+	//make sure nothing else is drawing
+	DrawWorld(0);
+	MovieMode(1);
+	SaveCamera();
+
+
+	//Draw the intro leadin text
+	//PlayMusic("..\\music\\evil.mp3");
+	
+//	SetWeather("..\\maps\\canyon\\weather_stormy.ini");
+	FadeIn("..\\base\\art\\ui\\handyquote.bmp", 2000);
+	ShowImage("..\\base\\art\\ui\\handyquote.bmp", 3000);
+	FadeOut("..\\base\\art\\ui\\handyquote.bmp", 2000);
+	FadeIn("..\\base\\art\\ui\\handyquote2.bmp", 2000);
+	ShowImage("..\\base\\art\\ui\\handyquote2.bmp", 3000);
+	FadeOut("..\\base\\art\\ui\\handyquote2.bmp", 2000);
+
+
+	//Restore teh world drawing
+
+	
+	PlayMusic("..\\music\\ambient.mp3");
+
+	//Move the camera to location 1
+	SetCameraTarget( "c1" );
+	OffsetDrift(0, 1, 0);
+	RotationDrift(0, 0, 0);
+	SetCameraRotation(90,0,0);
+	SetCameraOffset(0,10,0);
+	SetCameraZoom(15);
+	DrawWorld(1);
+	MovieMode(1);
+	Sleep(8000);
+	
+	//Move the camera to location 2
+	RotationDrift(0, 0, 0);
+	SetCameraTarget( "c2" );
+	OffsetDrift(0, 1, 1);
+	SetCameraRotation(180,0,0);
+	SetCameraOffset(0,15,0);
+	SetCameraZoom(15);
+	Sleep(8500);
+	OffsetDrift(0, 0, 0);
+	
+	
+	//move to location 3
+	
+	RotationDrift(0, 0, 0);
+	SetCameraTarget( "c4" );
+	OffsetDrift(0, 1, 5);
+	SetCameraRotation(180,0,0);
+	SetCameraOffset(0,15,0);
+	SetCameraZoom(15);
+	Sleep( 4500);
+	PlayMusic("..\\music\\evil.mp3");
+	Sleep(8500);
+	OffsetDrift(0, 0, 0);
+
+
+	//go to other quote, switch weather while its showing
+	DrawWorld(0);
+	MovieMode(1);
+	
+	
+	//SetWeather("..\\maps\\canyon\\weather_stormy.ini");
+	
+	FadeIn("..\\base\\art\\ui\\handyquote3.bmp", 1000);
+	ShowImage("..\\base\\art\\ui\\handyquote3.bmp", 2000);
+	FadeOut("..\\base\\art\\ui\\handyquote3.bmp", 1000);
+	FadeIn("..\\base\\art\\ui\\handyquote4.bmp", 1000);
+	ShowImage("..\\base\\art\\ui\\handyquote4.bmp", 2000);
+	FadeOut("..\\base\\art\\ui\\handyquote4.bmp", 1000);
+	
+	//move back to location 3
+	RotationDrift(0, 0, 0);
+	SetCameraTarget( "s1" );
+	OffsetDrift(0, 0, 0);
+	SetCameraRotation(180,20,0);
+	SetCameraOffset(0,15,0);
+	SetCameraZoom(50);
+	DrawWorld(1);
+	ChangeEntityState( "s1", "shooting" );
+	ChangeEntityState( "s2", "shooting" );
+	ChangeEntityState( "s3", "shooting" );
+	Sleep(2500);
+	SetCameraRotation(45,20,0);
+	
+	var i;
+	for(i=0;i<10; i++)
+	{
+		ActivateEntityFunction( "s1", 0 );
+		Sleep(150);
+		ActivateEntityFunction( "s2", 0 );
+		Sleep(150);
+		ActivateEntityFunction( "s3", 0 );
+		Sleep(150);
+	}
+	
+	OffsetDrift(0, 0, 0);
+	
+	//Move the camera to location 2
+	SetCameraTarget( "wnd" );
+	SetCameraRotation(270,0,0);
+	SetCameraOffset(0,10,0);
+	SetCameraZoom(20);
+	OffsetDrift(-2, 1, 0);
+	DrawWorld(1);
+	MovieMode(1);
+	Sleep(6000);
+	OffsetDrift(-5, 1, 0);
+	Sleep(3000);
+	OffsetDrift(0, 0, 0);
+	
+	ChangeEntityState( "fun", "talk1");
+	ChangeEntityState( "and", "shooting");
+	EnableEntityAI( "fun", 0 );
+	EnableEntityAI( "and", 0 );
+	EnableEntityAI( "pft", 0 );
+	SetCameraTarget( "fun" );
+	SetCameraRotation(90,20,0);
+	SetCameraOffset(0,10,0);
+	SetCameraZoom(20);
+	SetMovieText("Soviet: Comrade! Ze amerikaniks have already claimed this planet!");
+	Sleep(4000);
+	SetMovieText("Soviet: Aye! They say that they will defend it!");
+	SetCameraTarget( "pft" );
+	ChangeEntityState( "pft", "angry1");
+	SetCameraRotation(270,-5,0);
+	SetCameraOffset(0,10,0);
+	SetCameraZoom(10);
+	Sleep(4000);
+	SetMovieText("Soviet: Very well, prepare ze atomic weapon!");
+	SetCameraTarget( "and" );
+	SetCameraRotation(0,-5,0);
+	SetCameraOffset(0,10,0);
+	SetCameraZoom(10);
+	ActivateEntityFunction( "dom", 0 );
+	Sleep(4000);
+	
+		
+	//back to communists
+	SetCameraTarget( "and" );
+	SetCameraRotation(0,-5,0);
+	SetCameraOffset(0,10,0);
+	SetCameraZoom(10);
+	SetMovieText("Soviet: We shall see how zey like their new planet as a snowball!");
+	Sleep(5000);
+	ChangeEntityState( "fun", "angry1");
+	ChangeEntityState( "and", "angry1");
+	ChangeEntityState( "pft", "angry1");
+	SetMovieText("Soviets: HAHAHAHAHA!");
+	SetCameraTarget( "and" );
+	SetCameraRotation(0,45,0);
+	SetCameraOffset(0,0,0);
+	SetCameraZoom(100);
+	Sleep(5500);
+	OffsetDrift(0, 0, 0);
+	
+	//skip to preparation of the weapon
+	SetCameraTarget( "dom" );
+	ActivateEntityFunction( "wnd", 0 );
+	SetCameraRotation(45,-10,0);
+	SetCameraZoom(150);
+	RotationDrift(-1.5,0,0);
+	SetMovieText("");
+	Sleep(11000);
+	
+	//skip to preparation of the weapon
+	SetCameraTarget( "dom" );
+	ActivateEntityFunction( "dom", 0 );
+	SetCameraRotation(50,-10,0);
+	SetCameraZoom(100);
+	ZoomDrift( -5 );
+	RotationDrift(-1.5,0,0);
+	SetMovieText("");
+	Sleep(12000);
+	
+	//OH NO! FLASH OF WHITE LIGHT!
+	SetWeather("..\\maps\\canyon\\weather_snowy2.ini");
+	SetGrassTexture("..\\maps\\canyon\\snow.bmp");
+	//SetCliffTexture("..\\maps\\canyon\\cliff-snow.bmp");
+	ReplaceTexture("..\\maps\\canyon\\cliff_original.bmp", "..\\maps\\canyon\\cliff-snow.bmp", 0);
+	ReplaceTexture("..\\base\\art\\objects\\decoration\\leaftri.bmp", "..\\base\\art\\objects\\decoration\\leaftri_snow.bmp", "..\\base\\art\\objects\\decoration\\leaftri_a.bmp" );
+	ReplaceTexture("..\\base\\art\\objects\\decoration\\bark.bmp", "..\\base\\art\\objects\\decoration\\bark_snow.bmp",0 );
+	
+	DrawWorld(0);
+	FadeInFS("..\\base\\art\\ui\\white.bmp", 2000);
+	ShowImageFS("..\\base\\art\\ui\\white.bmp", 4000);
+	FadeOutFS("..\\base\\art\\ui\\white.bmp", 2000);
+	DrawWorld(1);
+	
+	//Move the camera to location 2
+	RotationDrift(0, 0, 0);
+	SetCameraTarget( "c2" );
+	OffsetDrift(0, 1, 1);
+	SetCameraRotation(180,0,0);
+	SetCameraOffset(0,15,0);
+	SetCameraZoom(15);
+	SetMovieText( "Present Day" );
+	ZoomDrift(0);
+	Sleep(14500);
+	OffsetDrift(0, 0, 0);
+
+DrawWorld(0);
+	FadeIn("..\\base\\art\\ui\\theaters.bmp", 2000);
+	ShowImage("..\\base\\art\\ui\\theaters.bmp", 3000);
+	FadeOut("..\\base\\art\\ui\\theaters.bmp", 2000);
+
+	//MovieMode(0);
+	//DrawWorld(1);
+
+	RestoreCamera();
+}
+
+function Skip ()
+{
+	//Restore the camera and movie state
+	MovieMode(0);
+	DrawWorld(0);
+	RestoreCamera();
+
+	//Kill the things that need to be dead
+	SetEntityHealth("s1", -1);
+	SetEntityHealth("s2", -1);
+	SetEntityHealth("s3", -1);
+	SetEntityHealth("s4", -1);
+	SetEntityHealth("s5", -1);
+	
+	//Set the right weather
+	ActivateEntityFunction( "wnd", 0);
+	EnableEntityAI( "bs", 0 );
+	SetWeather("..\\maps\\canyon\\weather_sunny.ini");
+
+	//Make a lightning sound, then draw a white block
+	FadeInFS("..\\base\\art\\ui\\white.bmp", 200);
+	ShowImageFS("..\\base\\art\\ui\\white.bmp", 2000);
+	FadeOutFS("..\\base\\art\\ui\\white.bmp", 200);
+	
+	DrawWorld(1);
+}

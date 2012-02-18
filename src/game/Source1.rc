@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONNECT DIALOGEX 0, 0, 132, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Game Startup"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDOK,11,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,68,68,50,14
+    LTEXT           "Server Name",IDC_STATIC,5,35,44,8
+    EDITTEXT        IDC_EDIT1,5,46,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,5,17,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,73,17,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Username",IDC_STATIC,5,7,34,8
+    LTEXT           "Password",IDC_STATIC,73,7,32,8
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 132, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "Set Up Device Settings"
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,98,50,14
+    COMBOBOX        IDC_RESOLUTION,17,18,83,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Resolution",IDC_STATIC,15,7,34,8
+    EDITTEXT        IDC_MAP,18,73,84,14,ES_AUTOHSCROLL
+    CONTROL         "Windowed",IDC_WINDOWED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,35,36,50,10
+    LTEXT           "Map:",IDC_STATIC,17,59,17,8
+END
+
+IDD_VIDEO DIALOGEX 0, 0, 236, 131
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Video Mode",IDC_STATIC,7,32,38,8
+    CONTROL         "Windowed",IDC_WINDOWED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,42,66,10
+    PUSHBUTTON      "Set Defaults",IDC_DEFAULT,163,13,66,15,BS_MULTILINE
+    LISTBOX         IDC_MODELIST,7,42,149,83,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DEFAULTS,7,15,149,80,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Setting Profiles:",IDC_STATIC,7,4,52,8
+    LTEXT           "Settings",IDC_STATIC,164,32,27,8
+    PUSHBUTTON      "Auto Configure",IDC_AUTOCONFIGURE,164,111,65,14
+END
+
+IDD_GAME DIALOGEX 0, 0, 232, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Level",IDC_STATIC,16,7,18,8
+    COMBOBOX        IDC_LEVELCOMBO,15,18,110,101,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Rescan for Levels",IDC_BUTTON1,133,17,65,14
+END
+
+IDD_SETTINGS2 DIALOGEX 0, 0, 254, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Set up device options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Start",IDOK,105,162,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,163,162,50,14
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,4,1,245,159
+END
+
+IDD_BENCHMARK DIALOGEX 0, 0, 236, 140
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Test System",IDC_TEST,72,120,78,14
+    LTEXT           "Minimum System Requirements:",IDC_STATIC,6,6,102,8
+    LTEXT           "Proccesor: 750mhz Athlon/Pentium3",IDC_STATIC,12,24,116,
+                    8
+    LTEXT           "RAM: 128MB",IDC_STATIC,12,36,42,8
+    LTEXT           "OS: Windows 98/ME/2K/XP",IDC_STATIC,12,48,87,8
+    LTEXT           "3D Accelerator: GeForce 2 or equivalent",IDC_STATIC,12,
+                    60,130,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "IDD_CONNECT", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    "IDD_SETTINGS", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    "IDD_VIDEO", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        BOTTOMMARGIN, 125
+    END
+
+    "IDD_GAME", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    "IDD_SETTINGS2", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 249
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 176
+    END
+
+    "IDD_BENCHMARK", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "icon2.ico"
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
