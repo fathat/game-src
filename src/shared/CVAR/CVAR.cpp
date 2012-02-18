@@ -21,7 +21,6 @@ float CVARManager::EndProfile( std::string BlockName )
 	return f;
 }
 
-//OMFMOG
 void  CVARManager::SetVarS ( std::string Name, const char* value )
 {
 	std::string NewValue = value;

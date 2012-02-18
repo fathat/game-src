@@ -29,7 +29,7 @@ void Crate::Init(Screen3D& Screen,  WorldManager* WM, MeshManager& MM,  SoundMan
 	//A collectible object?
 	Collectible = GetIniValue(ObjectFile, "properties", "collectible");
 
-	//[HACK]This should probably be loaded from teh file, but I'm lazy
+	//[HACK]This should probably be loaded from the file, but I'm lazy
 	Health = 2000;
 	
 	//readjust bounding box

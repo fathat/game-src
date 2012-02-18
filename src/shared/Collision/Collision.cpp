@@ -205,7 +205,8 @@ bool CollisionMesh::Collision( Position &MeshLocation, const Vector3D& p1, const
 	Vector3D InvRayDir;				 //Inverse of that direction	
 	D3DXVECTOR4 TransformedPoint[3]; //p1 and p2 transformed into local space
 	D3DXMATRIX  InverseTransform;    //The inverse of the Mesh's world matrix
-	Real Det;						 //Determinant, isn't used for anything but D3D wants it
+	Real Det;						 
+	//Determinant, isn't used for anything but D3D wants it
 	bool FoundCollision=false;		 //If a collision was found, this is true
 
 

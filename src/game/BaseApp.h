@@ -32,8 +32,7 @@
 
 class BaseApp
 {
-public:
-	//something something goes here
+
     	
 public:
 	

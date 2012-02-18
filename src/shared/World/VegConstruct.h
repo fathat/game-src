@@ -13,7 +13,7 @@ class WorldManager;
 class VegConstruction : public Construction
 {
 protected:
-	//MESH!OMGOMGOMG
+
 	MeshHandle hMesh;
 
 	Real Width,Height,Length;

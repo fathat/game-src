@@ -19,7 +19,7 @@ using namespace std;
 class SphereNode
 {
 
-	//WTF!
+
 	Vector3D location;
 	float radius;
 

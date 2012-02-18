@@ -203,8 +203,7 @@ void GDSocket::StripEscapeCodes(char* string, char* output, bool AddColors)
 
 		if(string[i] == 109 && SkipEscapeCode == true && AddColors)
 		{
-			
-			//Hack: FIX THIS!! YARR!1
+
 			digit1[0] = string[skipstart+2];
 			digit2[0] = string[skipstart+3];
 

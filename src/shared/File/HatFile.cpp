@@ -24,7 +24,7 @@ bool HatFile::LoadHatFile(char* filename)
 	//Create a token list to build from
 	GetWords( File, WordList );
 
-	//CONSTRUCT TEH HAT TREe!1!
+
 	TokenGroup* CurrentGroup = NULL;
 	int i=0;
 	while( i<WordList.size() )

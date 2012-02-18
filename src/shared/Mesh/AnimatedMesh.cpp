@@ -50,12 +50,12 @@ bool AnimatedMesh::Init( Screen3D& Screen, MeshManager& MM, char* descriptionfil
 		if(strcmpi(c, "\n") == 0)
 		{
 
-			//LINE SI DONE!111
+
 			current_string++;
 
 
 			//yay, if this was the end of the third string
-			//then we add the state! HOORAY!!1
+			//then we add the state! HOORAY!
 			if(current_string >=4 )
 			{
 				//HOORAY! ADD THE STATE!
@@ -149,7 +149,7 @@ bool AnimatedMesh::CheckVisibility( Screen3D& Screen, Position& MeshLocation)
 	if(StateList.size() < 1 )
 		return false;
 	
-	//Get the mesh pointars!1
+	//Get the mesh pointers
 	Mesh* M1;
 	M1 = MMPtr->Get( StateList[CurrentState].hMesh );
 	
@@ -168,14 +168,14 @@ bool AnimatedMesh::CheckForCollision( Position& MeshLocation, Vector3D* Line, Co
 	if(StateList.size() < 1 )
 		return false;
 	
-	//Get the mesh pointars!1
+
 	Mesh* M1;
 	M1 = MMPtr->Get( StateList[CurrentState].hMesh );
 
 	return M1->CheckForCollision( MeshLocation, Line, c );
 }
 
-//Get teh bounding box!11
+
 AABB AnimatedMesh::GetBox()
 {
 	if(StateList.size() < 1 )

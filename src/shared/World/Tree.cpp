@@ -74,7 +74,7 @@ void Branch::BuildPoints(Vector3D& Start, Vector3D& Dir,  ProceduralTree* MyTree
 
 
 
-	//OHNO! Root is the parent, so we have to CHEAT!!! KHhHH
+	//OHNO! Root is the parent, so we have to CHEAT!!! 
 	//Basically, since we want the tree to be balanced, and since
 	//balancing it is easier at the root stage, we for the second
 	//branch we just mirror the first one
@@ -196,7 +196,7 @@ void Branch::BuildPoints(Vector3D& Start, Vector3D& Dir,  ProceduralTree* MyTree
 
 	Real BranchSize = rand() % (int)abs(MyTree->BranchSizeMax - MyTree->BranchSizeMin) + MyTree->BranchSizeMin;
 
-	//Move the branch to its new location. JOORAH!1
+	//Move the branch to its new location. 
 	Point.x += Normal.x * BranchSize * pow( MyTree->ShrinkRate, MyTree->CurrentDepth ) ;
 	Point.y += Normal.y * BranchSize * pow( MyTree->ShrinkRate, MyTree->CurrentDepth );
 	Point.z += Normal.z * BranchSize * pow( MyTree->ShrinkRate, MyTree->CurrentDepth );
@@ -281,7 +281,7 @@ void Branch::BuildPoints(Vector3D& Start, Vector3D& Dir,  ProceduralTree* MyTree
 		MyTree->FullColMesh.AddTriangles( Tri, 1 );
 	 }
 
-	//Rotate the leaves KHHHHHHHH
+	//Rotate the leaves 
 	Matrix LeafMatrix;
 	Matrix LeafRotation;
 	int    LeafTwist;

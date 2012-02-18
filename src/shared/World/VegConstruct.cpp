@@ -232,7 +232,7 @@ void VegConstruction::Update( Real FrameTime, WorldManager* WMPtr )
 //
 // Description:
 //
-// Draws the box (WOWOWOW)
+// Draws the box 
 //
 ///////////////////////////////////////////////
 void VegConstruction::Draw(Screen3D& Screen)

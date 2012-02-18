@@ -33,7 +33,7 @@ bool Conversation::LoadFile ( char* file )
 	//make sure the current frame is where it should be
 	ResetConversation();
 
-	//JOORAH!
+	//HOORAH!
 	return true;
 }
 

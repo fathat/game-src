@@ -90,7 +90,7 @@ bool MeshManager::InitShader()
 		//Create the shader!
 		if(FAILED( ScreenPtr->D3DDevice->CreateVertexShader( (DWORD*)pCode->GetBufferPointer(), &vertexShader ) ) )
 		{
-			//OH TEH NOS!
+			//OH NO!
 			pCode->Release();
 			return false;
 		}

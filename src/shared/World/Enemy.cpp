@@ -192,7 +192,7 @@ void Enemy::Think ( Real FrameTime, WorldManager* SM )
 
 		//Move the weapon into position
 
-		//[HACK] if it's not a weapon bad things will happenx0r!!11
+		//[HACK] if it's not a weapon bad things will happen
 		Weapon* MyWeapon = (Weapon*)EquipmentList[EquipedItem];
 		MyWeapon->SetHand ( false );
 		Position WeaponLocation = Location;

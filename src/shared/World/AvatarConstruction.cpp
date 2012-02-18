@@ -13,7 +13,7 @@ std::string AvatarConstruction::GetTypeString()
 	return "AvatarConstruction";
 }
 
-//since this is just the base level construction, we'll just make a sphere (WHOO, EXCITING!!!!)
+//since this is just the base level construction, we'll just make a sphere 
 bool AvatarConstruction::Construct( char* descriptionFile, DynamicsSolver* solver, Screen3D& Screen,MeshManager& MM, Position& Location, ICollisionHandler* aCollisionHandler )
 {
 	//deconstruct any old stuff

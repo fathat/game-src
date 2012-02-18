@@ -12,7 +12,7 @@
 class BoxConstruction : public Construction
 {
 protected:
-	//MESH!OMGOMGOMG
+
 	MeshHandle hMesh;
 
 	Real Width,Height,Length;

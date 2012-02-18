@@ -133,7 +133,7 @@ bool BoxConstruction::CheckForParticleCollision ( Vector3D& p1, Vector3D& p2, Co
 //
 // Description:
 //
-// Draws the box (WOWOWOW)
+// Draws the box
 //
 ///////////////////////////////////////////////
 void BoxConstruction::Draw(Screen3D& Screen)

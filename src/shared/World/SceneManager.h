@@ -35,7 +35,7 @@ protected:
 	int currentID;
 	int GenerateID();
 
-//HUH?!
+
 	SphereNode* root;
 	int MaxTreeDepth;
 

@@ -20,7 +20,7 @@ bool g_bLoadThreadDone=false;
 CRITICAL_SECTION LoadingCS;
 
 
-//HAY!
+
 HatKernel* GetSSLKernel()
 {
 	return Game->GetHatKernel();
@@ -885,7 +885,7 @@ void GameApp::KeyMessage( int virtualkey )
 
 void GameApp::CharMessage( char charpressed, int repeat ) 
 {
-	//Check for movie skip !!1
+	//Check for movie skip
 	MovieSkipFlag = false;
 	if(charpressed == ' ')
 	{

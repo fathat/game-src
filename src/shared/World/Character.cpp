@@ -94,7 +94,7 @@ void Character::Use( int function, Real Param1, Real Param2, Real Param3, Real F
 	if(EquipmentList.size() == 0)
 		return;
 
-	//OMGS OHNOS FIAR TEH WEAPONS!1
+
 	if( function == 0 )
 	{
 		ChangeState("shooting");
@@ -102,14 +102,13 @@ void Character::Use( int function, Real Param1, Real Param2, Real Param3, Real F
 			EquipmentList[EquipedItem]->Use( WF_FIRE1, NULL, NULL, NULL, WMPtr->GTPtr->GetFrameTime()  );
 	}
 
-	//OMGS OHNOS FIAR TEH SECONDARY WEAPONS!1
 	else if( function == 1 )
 	{
 		if(EquipmentList[EquipedItem])
 			EquipmentList[EquipedItem]->Use( WF_FIRE1, NULL, NULL, NULL, WMPtr->GTPtr->GetFrameTime()  );
 	}
 
-	//RELOADS TEH WEAPONS OH TEH NOS
+	//Reloads weapon
 	else if( function == 2 )
 	{
 		if(EquipmentList[EquipedItem])

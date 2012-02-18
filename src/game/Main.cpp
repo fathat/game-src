@@ -62,7 +62,7 @@ void ScanForLevels( HWND hLevelCombo )
 	SetCurrentDirectory( Path.c_str() );
 	
 
-	//Find TEH FIRST FILE!11
+
 	long searchhandle = _findfirst( "*.ini" , &fd);
 
 	if(searchhandle != -1 )

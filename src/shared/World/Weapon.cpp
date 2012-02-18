@@ -113,7 +113,7 @@ void Weapon::SetLocation( Position& NewLocation )
 	Vector3D Offset;
 	Vector3D Offset2;
 
-	//O____________O!11
+
 	if(RightHanded)
 	{
 		Offset.z = 0.0f;
@@ -129,7 +129,6 @@ void Weapon::SetLocation( Position& NewLocation )
 		Offset2.Rotatey( -NewLocation.Yaw - RADIAN(20));
 	}
 
-	//OHTEHNOS!1
 	Location = NewLocation ; 
 	Location.x += Offset.x;
 	Location.z += Offset.z;
