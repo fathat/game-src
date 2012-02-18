@@ -1,0 +1,37 @@
+;
+; v0: position A
+; v1-v3: texture coordinates
+; v4: position B
+; v5-v7: texture coordinates
+;
+; world-view projection matrix 0-3
+; blend factors                9 ( x is interpolation factor, y is inverse interpolation factor
+; constants                    10
+
+vs.1.1
+
+;lerp in model space
+mul r1, v0, c[9].y
+mad r1, v4, c[9].x, r1
+
+; Transform to clip space
+
+mul r0, r1.x, c[0] 
+mad r0, r1.y, c[1], r0 
+mad r0, r1.z, c[2], r0 
+add oPos, c[3], r0 
+
+; Interpolate the texture coords 
+
+;tex1
+mul r1,  v1, c[9].y
+mad oT0, v5, c[9].x, r1
+
+;tex2
+mul r1,  v2, c[9].y
+mad oT1, v6, c[9].x, r1
+
+;tex3
+mul r1,  v3, c[9].y
+mad oT2, v7, c[9].x, r1
+

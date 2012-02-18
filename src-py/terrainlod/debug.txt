@@ -1,0 +1,1188 @@
+Attempting Resolution: 1024x1024
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1024x1024
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1024x1024
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1024x1024
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1024x1024
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1008x732
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1008x732
+
+BackBuffer: 22
+
+DepthStencil: 75
+
+Attempting Resolution: 1016x741
+
+BackBuffer: 22
+
+DepthStencil: 75
+
